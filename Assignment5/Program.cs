@@ -12,7 +12,7 @@ namespace Assignment5
         static void Main(string[] args)
         {
             Program orange = new Program();
-            Console.WriteLine(orange.Gematria("a"));
+            Console.WriteLine(orange.Gematria("universe"));
         }
 
         public int Gematria (string word)
