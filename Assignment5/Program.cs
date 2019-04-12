@@ -31,9 +31,9 @@ namespace Assignment5
             while (Letters[x] != letter)
             {
                 if (Letters[x++] == letter)
-                    return x;
+                    return x++;
             }
-            return -1;
+            return x;
         }
 
 
