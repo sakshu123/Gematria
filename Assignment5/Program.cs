@@ -12,12 +12,12 @@ namespace Assignment5
         static void Main(string[] args)
         {
             Program orange = new Program();
-            Console.WriteLine(orange.Gematria("universe"));
+            Console.WriteLine(orange.Gematria("a"));
         }
 
         public int Gematria (string word)
         {
-            int GematriaValue = 0;
+            int GematriaValue = 1;
                 for (int i = 0; i < word.Length; i++)
             {
                 GematriaValue += LetterValue(word[i].ToString());
@@ -30,11 +30,16 @@ namespace Assignment5
             int x = 0;
             while (Letters[x] != letter)
             {
-                if (Letters[x++] == letter)
+                if (Letters[x++].Equals(letter))
+                {
                     return x++;
+
+                }
             }
-            return x;
+
+            return x++;
         }
+
 
 
     }
